@@ -1,8 +1,57 @@
+@use "sass:math";
+
 .background {
   background: url("../asstes/board-bg.jpg") center bottom;
   background-size: cover;
   height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 
+.zombie {
+  width: 200px;
+  height: 312px;
+  background: url("../asstes/walkingdead.png");
+  animation: walk 0.5s 0s infinite steps(9),
+             run 5s 0s linear infinite;
+  position: absolute;
+  left: 110%;
+  bottom: 40px;
+  z-index: 1500;
 
+  @for $i from 1 through 40 {
+    &:nth-child(#{$i}){
+      animation-delay: 0s, $i * 0.4s ;
+      animation-duration: 0.5s, 4s + ($i * 0.2);
+      bottom: 40px + ($i * random(10));
+    }
+  }
+}
+
+@keyframes walk {
+  0% {}
+  100%{
+    background-position-x: -1800px;
+  }
+}
+
+@keyframes run {
+  50%{
+    left: -15%;
+    transform: scale(1, 1);
+    z-index: 1500;
+  }
+
+  51%{
+    transform: scale(-1, 1);
+    bottom: 40px;
+    z-index: 1000;
+  }
+
+  100%{
+    left: 110%;
+    transform: scale(-1, 1);
+    bottom: 180px;
+    z-index: 1000;
+  }
+}

@@ -1,10 +1,50 @@
-
 import './App.scss';
 
 function App() {
   return (
-    <div className="background">
-    </div>
+<div className='background'>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+  <div className='zombie'/>
+</div>
+
   );
 }
 
